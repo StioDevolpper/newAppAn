@@ -237,7 +237,7 @@ export class AppComponent implements OnInit {
   }
 
   async completeTranscript(transcript: any) {
-    console.log('transcripttttt ',transcript)
+    console.log('transcripttttt updateeeeeeeee ',transcript)
      this.appendMessage_tt('<div class="ticontainer"><div class="tiblock"><div class="tidot"></div></div></div>', false);
     const cardBody = document.querySelector('.card-body');
     cardBody!.scrollTop = cardBody!.scrollHeight;
@@ -320,7 +320,7 @@ export class AppComponent implements OnInit {
   async completeText(transcript: any, conversation: any, character='') {
     let response: Response = new Response();
     try {
-      response = await fetch('http://localhost:5000', {
+      response = await fetch('https://askserver.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
