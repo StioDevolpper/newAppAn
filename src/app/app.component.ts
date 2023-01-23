@@ -318,9 +318,9 @@ export class AppComponent implements OnInit {
   }
 
   async completeText(transcript: any, conversation: any, character='') {
-    let response: Response = new Response();;
+    let response: Response = new Response();
     try {
-      response = await fetch('https://askmee.onrender.com', {
+      response = await fetch('http://localhost:5000', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
