@@ -237,7 +237,7 @@ export class AppComponent implements OnInit {
   }
 
   async completeTranscript(transcript: any) {
-    console.log('transcripttttt updateeeeeeeee ',transcript)
+    console.log('transcripttttt update 333333',transcript)
      this.appendMessage_tt('<div class="ticontainer"><div class="tiblock"><div class="tidot"></div></div></div>', false);
     const cardBody = document.querySelector('.card-body');
     cardBody!.scrollTop = cardBody!.scrollHeight;
