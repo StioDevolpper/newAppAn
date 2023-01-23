@@ -1,0 +1,218 @@
+.spacer {
+  flex: 1;
+}
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #313821;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+.chat{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.card{
+  height: 600px;
+  border-radius: 15px !important;
+  background-color: rgba(0,0,0,0.4) !important;
+}
+.contacts_body{
+  padding:  0.75rem 0 !important;
+  overflow-y: auto;
+  white-space: nowrap;
+}
+.msg_card_body{
+  overflow-y: auto;
+}
+.card-header{
+  border-radius: 15px 15px 0 0 !important;
+  border-bottom: 0 !important;
+}
+.card-footer{
+  border-radius: 0 0 15px 15px !important;
+  border-top: 0 !important;
+}
+.container{
+  align-content: center;
+}
+.search{
+  border-radius: 15px 0 0 15px !important;
+  background-color: rgba(0,0,0,0.3) !important;
+  border:0 !important;
+  color:white !important;
+}
+.search:focus{
+  box-shadow:none !important;
+  outline:0px !important;
+}
+.type_msg{
+  background-color: rgba(0,0,0,0.3) !important;
+  border:0 !important;
+  color:white !important;
+  height: 60px !important;
+  overflow-y: auto;
+}
+.type_msg:focus{
+  box-shadow:none !important;
+  outline:0px !important;
+}
+.attach_btn{
+  border-radius: 15px 0 0 15px !important;
+  background-color: rgba(0,0,0,0.3) !important;
+  border:0 !important;
+  color: white !important;
+  cursor: pointer;
+}
+.send_btn{
+  border-radius: 0 15px 15px 0 !important;
+  background-color: rgba(0,0,0,0.3) !important;
+  border:0 !important;
+  color: white !important;
+  cursor: pointer;
+}
+.search_btn{
+  border-radius: 0 15px 15px 0 !important;
+  background-color: rgba(0,0,0,0.3) !important;
+  border:0 !important;
+  color: white !important;
+  cursor: pointer;
+}
+.contacts{
+  list-style: none;
+  padding: 0;
+}
+.contacts li{
+  width: 100% !important;
+  padding: 5px 10px;
+  margin-bottom: 15px !important;
+}
+.active{
+  background-color: rgba(0,0,0,0.3);
+}
+.msg_head{
+  position: relative;
+}
+#action_menu_btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+#action_menu_btn_left{
+  position: absolute;
+  top: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.action_menu{
+  z-index: 1;
+  position: absolute;
+  padding: 15px 0;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border-radius: 15px;
+  top: 30px;
+  right: 15px;
+  display: none;
+}
+.action_menu ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.action_menu ul li{
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+.action_menu ul li i{
+  padding-right: 10px;
+}
+.action_menu ul li:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.2);
+}
+@media(max-width: 576px){
+  .contacts_card{
+    margin-bottom: 15px !important;
+  }
+}
+
+.speaking #button {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+.tiblock {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+.ticontainer .tidot {
+  background-color: #90949c;
+}
+.tidot {
+  -webkit-animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+  animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
+  border-radius: 2px;
+  display: inline-block;
+  height: 4px;
+  margin-right: 2px;
+  width: 4px;
+}
+
+.action_menu_bar {
+  z-index: 1;
+  position: absolute;
+  padding: 15px 0;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border-radius: 15px;
+  top: 30px;
+  right: 15px;
+}
+.action_menu_bar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.action_menu_bar ul li{
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+.action_menu_bar ul li i{
+  padding-right: 10px;
+
+}
+.action_menu_bar ul li:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.2);
+}
+
+textarea#resultTextarea {
+  background-image: url('https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  padding: 5px 3px;
+  transition:0.3s;
+}
+textarea#resultTextarea:focus {
+  background-image:none;
+  text-indent:0px
+}

@@ -1,1 +1,137 @@
-/* You can add global styles to this file, and also import other style files */
+body,html{
+  height: 100%;
+  margin: 0;
+  background: #7F7FD5;
+  background: -webkit-linear-gradient(to right, #83248d, #c39dd2, #e3d4e3);
+  background: linear-gradient(to right, #e5c4e3, #7a687c, #e643ec);
+}
+.msg_cotainer{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  border-radius: 25px;
+  background-color: #f0f8ff;
+  padding: 10px;
+  position: relative;
+}
+.msg_cotainer_send{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  border-radius: 25px;
+  background-color: #76d3e9;
+  padding: 10px;
+  position: relative;
+}
+.msg_time_send{
+  display: none;
+}
+.msg_time_send{
+  position: absolute;
+  right:0;
+  bottom: -15px;
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+}
+.dot-typing {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  animation: dot-typing 1.5s infinite ease-in-out;
+}
+
+@keyframes dot-typing {
+  0% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  16.667% {
+    box-shadow: 9984px -10px 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px -10px 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px -10px 0 0 #9880ff;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
+  }
+}
+.loading {
+  font-size: 30px;
+}
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis .7s linear 0s infinite alternate-reverse;
+  content: "\2026";
+  width: 0em;
+}
+.ticontainer .tidot {
+  width: 20px;
+}
+.tiblock {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+
+.tidot:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis .7s linear 0s infinite alternate-reverse;
+  content: "\2026";
+  width: 0em;
+}
+
+@keyframes ellipsis {
+  to {    width: 1em;  }
+
+}
+textarea#result {
+  background-image: url('https://emojipedia-us.s3.amazonaws.com/source/skype/289/backhand-index-pointing-right_1f449.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  padding: 5px 55px;
+  transition:0.3s;
+}
+textarea#result:focus {
+  background-image:none;
+  text-indent:0px
+}
+
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
